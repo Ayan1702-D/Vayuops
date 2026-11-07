@@ -1,0 +1,117 @@
+{
+  "method": "evidently",
+  "reference_period": {
+    "start": "2020-01-02",
+    "end": "2023-12-31"
+  },
+  "comparisons": {
+    "test_a": {
+      "status": "no_drift",
+      "share_drifted": 0.3333,
+      "drifted_features": [
+        "no2",
+        "o3"
+      ],
+      "per_feature": {
+        "pm25": {
+          "psi": 0.05615,
+          "drifted": false
+        },
+        "pm10": {
+          "psi": 0.08466,
+          "drifted": false
+        },
+        "no2": {
+          "psi": 0.217038,
+          "drifted": true
+        },
+        "so2": {
+          "psi": 0.022185,
+          "drifted": false
+        },
+        "co": {
+          "psi": 0.064619,
+          "drifted": false
+        },
+        "o3": {
+          "psi": 0.272732,
+          "drifted": true
+        }
+      },
+      "per_city_pm25_psi": {
+        "bengaluru": 0.400016,
+        "chennai": 0.583512,
+        "delhi": 0.095522,
+        "gwalior": 0.123749,
+        "hyderabad": 0.462627,
+        "jaipur": 0.286905,
+        "kolkata": 0.793617,
+        "lucknow": 0.427554,
+        "mumbai": 1.386789,
+        "visakhapatnam": 0.032074
+      },
+      "reference_period": {
+        "start": "2020-01-02",
+        "end": "2023-12-31"
+      },
+      "current_period": {
+        "start": "2024-07-01",
+        "end": "2024-12-31"
+      }
+    },
+    "test_b": {
+      "status": "drifted",
+      "share_drifted": 0.6667,
+      "drifted_features": [
+        "no2",
+        "so2",
+        "co",
+        "o3"
+      ],
+      "per_feature": {
+        "pm25": {
+          "psi": 0.080027,
+          "drifted": false
+        },
+        "pm10": {
+          "psi": 0.158464,
+          "drifted": false
+        },
+        "no2": {
+          "psi": 0.277053,
+          "drifted": true
+        },
+        "so2": {
+          "psi": 1.844503,
+          "drifted": true
+        },
+        "co": {
+          "psi": 5.018628,
+          "drifted": true
+        },
+        "o3": {
+          "psi": 0.283281,
+          "drifted": true
+        }
+      },
+      "per_city_pm25_psi": {
+        "bengaluru": 0.327122,
+        "chennai": 0.327852,
+        "delhi": 0.191263,
+        "hyderabad": 2.001462,
+        "jaipur": 0.269758,
+        "kolkata": 0.141948,
+        "lucknow": 1.115509,
+        "mumbai": 0.210738
+      },
+      "reference_period": {
+        "start": "2020-01-02",
+        "end": "2023-12-31"
+      },
+      "current_period": {
+        "start": "2025-01-01",
+        "end": "2025-12-31"
+      }
+    }
+  }
+}
