@@ -1,0 +1,120 @@
+INFO bengaluru: calendar_rows=2192 dropped_missing_target=100 dropped_missing_pm25_t=9
+INFO chennai: calendar_rows=2192 dropped_missing_target=92 dropped_missing_pm25_t=7
+INFO delhi: calendar_rows=2192 dropped_missing_target=17 dropped_missing_pm25_t=2
+INFO gwalior: calendar_rows=1827 dropped_missing_target=36 dropped_missing_pm25_t=3
+INFO hyderabad: calendar_rows=2192 dropped_missing_target=45 dropped_missing_pm25_t=3
+INFO jaipur: calendar_rows=2192 dropped_missing_target=73 dropped_missing_pm25_t=1
+INFO kolkata: calendar_rows=2192 dropped_missing_target=51 dropped_missing_pm25_t=6
+INFO lucknow: calendar_rows=2192 dropped_missing_target=59 dropped_missing_pm25_t=1
+INFO mumbai: calendar_rows=2192 dropped_missing_target=80 dropped_missing_pm25_t=4
+INFO visakhapatnam: calendar_rows=1827 dropped_missing_target=22 dropped_missing_pm25_t=1
+INFO Excluded suspect rows train bengaluru: 4
+INFO Excluded suspect rows train chennai: 12
+INFO Excluded suspect rows train delhi: 10
+INFO Excluded suspect rows train gwalior: 0
+INFO Excluded suspect rows train hyderabad: 0
+INFO Excluded suspect rows train jaipur: 4
+INFO Excluded suspect rows train kolkata: 0
+INFO Excluded suspect rows train lucknow: 0
+INFO Excluded suspect rows train mumbai: 0
+INFO Excluded suspect rows train visakhapatnam: 0
+INFO Excluded suspect rows val bengaluru: 7
+INFO Excluded suspect rows val chennai: 0
+INFO Excluded suspect rows val delhi: 0
+INFO Excluded suspect rows val gwalior: 0
+INFO Excluded suspect rows val hyderabad: 2
+INFO Excluded suspect rows val jaipur: 0
+INFO Excluded suspect rows val kolkata: 0
+INFO Excluded suspect rows val lucknow: 0
+INFO Excluded suspect rows val mumbai: 0
+INFO Excluded suspect rows val visakhapatnam: 0
+INFO Excluded suspect rows test_a bengaluru: 0
+INFO Excluded suspect rows test_a chennai: 4
+INFO Excluded suspect rows test_a delhi: 0
+INFO Excluded suspect rows test_a gwalior: 0
+INFO Excluded suspect rows test_a hyderabad: 0
+INFO Excluded suspect rows test_a jaipur: 0
+INFO Excluded suspect rows test_a kolkata: 0
+INFO Excluded suspect rows test_a lucknow: 0
+INFO Excluded suspect rows test_a mumbai: 0
+INFO Excluded suspect rows test_a visakhapatnam: 0
+INFO Excluded suspect rows test_b bengaluru: 0
+INFO Excluded suspect rows test_b chennai: 2
+INFO Excluded suspect rows test_b delhi: 0
+INFO Excluded suspect rows test_b hyderabad: 0
+INFO Excluded suspect rows test_b jaipur: 0
+INFO Excluded suspect rows test_b kolkata: 2
+INFO Excluded suspect rows test_b lucknow: 2
+INFO Excluded suspect rows test_b mumbai: 0
+C:\Users\patha\AppData\Roaming\Python\Python313\site-packages\mlflow\tracking\_tracking_service\utils.py:140: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, store_uri)
+INFO persistence-00-level-none val macro MAE 10.778
+INFO ridge-01-level-none val macro MAE 11.012
+INFO ridge-02-level-none val macro MAE 10.997
+INFO ridge-03-delta_log-none val macro MAE 10.230
+INFO ridge-04-delta_log-none val macro MAE 10.225
+INFO lightgbm-05-level-l2 val macro MAE 10.020
+INFO lightgbm-06-level-l1 val macro MAE 9.892
+INFO lightgbm-07-level-huber val macro MAE 26.695
+INFO lightgbm-08-level-l2 val macro MAE 10.083
+INFO lightgbm-09-level-l1 val macro MAE 9.846
+INFO lightgbm-10-level-huber val macro MAE 26.690
+INFO lightgbm-11-delta_log-l2 val macro MAE 10.022
+INFO lightgbm-12-delta_log-l1 val macro MAE 10.252
+INFO lightgbm-13-delta_log-huber val macro MAE 9.975
+INFO lightgbm-14-delta_log-l2 val macro MAE 10.044
+INFO lightgbm-15-delta_log-l1 val macro MAE 10.116
+INFO lightgbm-16-delta_log-huber val macro MAE 10.061
+INFO xgboost-17-level-l2 val macro MAE 10.277
+INFO xgboost-18-level-l1 val macro MAE 10.086
+INFO xgboost-19-level-huber val macro MAE 2832.840
+INFO xgboost-20-level-l2 val macro MAE 10.188
+INFO xgboost-21-level-l1 val macro MAE 9.951
+INFO xgboost-22-level-huber val macro MAE 2832.840
+INFO xgboost-23-delta_log-l2 val macro MAE 10.037
+INFO xgboost-24-delta_log-l1 val macro MAE 10.296
+INFO xgboost-25-delta_log-huber val macro MAE 10.028
+INFO xgboost-26-delta_log-l2 val macro MAE 10.041
+INFO xgboost-27-delta_log-l1 val macro MAE 10.183
+INFO xgboost-28-delta_log-huber val macro MAE 9.970
+2026/11/08 00:49:23 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:28 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:32 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:37 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:42 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:47 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:52 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:49:58 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:03 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:09 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:14 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:20 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:25 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:30 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:36 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:41 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:47 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:52 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:50:57 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:03 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:08 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:14 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:19 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:24 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:30 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:35 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:41 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:46 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026/11/08 00:51:52 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+INFO bengaluru: calendar_rows=2192 dropped_missing_target=100 dropped_missing_pm25_t=9
+INFO chennai: calendar_rows=2192 dropped_missing_target=92 dropped_missing_pm25_t=7
+INFO delhi: calendar_rows=2192 dropped_missing_target=17 dropped_missing_pm25_t=2
+INFO gwalior: calendar_rows=1827 dropped_missing_target=36 dropped_missing_pm25_t=3
+INFO hyderabad: calendar_rows=2192 dropped_missing_target=45 dropped_missing_pm25_t=3
+INFO jaipur: calendar_rows=2192 dropped_missing_target=73 dropped_missing_pm25_t=1
+INFO kolkata: calendar_rows=2192 dropped_missing_target=51 dropped_missing_pm25_t=6
+INFO lucknow: calendar_rows=2192 dropped_missing_target=59 dropped_missing_pm25_t=1
+INFO mumbai: calendar_rows=2192 dropped_missing_target=80 dropped_missing_pm25_t=4
+INFO visakhapatnam: calendar_rows=1827 dropped_missing_target=22 dropped_missing_pm25_t=1
+Selected lightgbm-09-level-l1 by validation macro MAE 9.846; macro skill 0.053
+Split rows: train=14,154, val=1,807, test_a=1,824, test_b=2,744

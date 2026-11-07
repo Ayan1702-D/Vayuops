@@ -1,1 +1,135 @@
-# Training configuration placeholder.
+{
+  "tracking_uri": "./mlruns",
+  "experiment": "vayuops",
+  "random_state": 42,
+  "exclude_suspect": true,
+  "bootstrap": {
+    "block_days": 14,
+    "resamples": 1000,
+    "seed": 42
+  },
+  "target_modes": [
+    "level",
+    "delta_log"
+  ],
+  "enabled_groups": {
+    "weather": true,
+    "festival": true,
+    "anomaly": true
+  },
+  "models": {
+    "ridge": {
+      "alpha": [
+        1.0,
+        10.0
+      ]
+    },
+    "lightgbm": {
+      "n_estimators": [
+        140
+      ],
+      "num_leaves": [
+        15,
+        31
+      ],
+      "learning_rate": [
+        0.05
+      ],
+      "objective": [
+        "l2",
+        "l1",
+        "huber"
+      ]
+    },
+    "xgboost": {
+      "n_estimators": [
+        140
+      ],
+      "max_depth": [
+        3,
+        5
+      ],
+      "learning_rate": [
+        0.05
+      ],
+      "objective": [
+        "l2",
+        "l1",
+        "huber"
+      ]
+    }
+  },
+  "ablation_sets": {
+    "base": [],
+    "base+weather": [
+      "weather"
+    ],
+    "base+festival": [
+      "festival"
+    ],
+    "base+anomaly": [
+      "anomaly"
+    ],
+    "all": [
+      "weather",
+      "festival",
+      "anomaly"
+    ]
+  },
+  "weather": {
+    "api_url": "https://archive-api.open-meteo.com/v1/archive",
+    "timezone": "Asia/Kolkata",
+    "start_date": "2020-01-01",
+    "end_date": "2025-12-31",
+    "daily": [
+      "temperature_2m_mean",
+      "relative_humidity_2m_mean",
+      "wind_speed_10m_mean",
+      "wind_direction_10m_dominant",
+      "precipitation_sum",
+      "surface_pressure_mean"
+    ],
+    "coordinates": {
+      "bengaluru": [
+        12.97,
+        77.59
+      ],
+      "chennai": [
+        13.08,
+        80.27
+      ],
+      "delhi": [
+        28.61,
+        77.21
+      ],
+      "gwalior": [
+        26.22,
+        78.18
+      ],
+      "hyderabad": [
+        17.39,
+        78.49
+      ],
+      "jaipur": [
+        26.91,
+        75.79
+      ],
+      "kolkata": [
+        22.57,
+        88.36
+      ],
+      "lucknow": [
+        26.85,
+        80.95
+      ],
+      "mumbai": [
+        19.08,
+        72.88
+      ],
+      "visakhapatnam": [
+        17.69,
+        83.22
+      ]
+    }
+  }
+}

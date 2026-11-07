@@ -13,10 +13,11 @@ test:
 check: lint test
 
 train:
-	@echo "Training pipeline placeholder"
+	python -m vayuops_ml.train
 
 serve:
 	@echo "API serving placeholder"
 
 up:
 	@echo "Local stack placeholder"
+

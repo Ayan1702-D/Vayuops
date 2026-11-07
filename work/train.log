@@ -1,0 +1,25 @@
+C:\Users\patha\AppData\Roaming\Python\Python313\site-packages\mlflow\tracking\_tracking_service\utils.py:140: FutureWarning: Filesystem tracking backend (e.g., './mlruns') is deprecated. Please switch to a database backend (e.g., 'sqlite:///mlflow.db'). For feedback, see: https://github.com/mlflow/mlflow/issues/18534
+  return FileStore(store_uri, store_uri)
+2026/11/08 00:00:38 INFO mlflow.tracking.fluent: Experiment with name 'vayuops' does not exist. Creating a new experiment.
+2026/11/08 00:01:44 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+INFO persistence validation MAE 11.655; params={}
+2026/11/08 00:01:49 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+INFO ridge validation MAE 11.371; params={'alpha': 10.0}
+2026/11/08 00:01:54 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+INFO lightgbm validation MAE 11.167; params={'learning_rate': 0.05, 'n_estimators': 180, 'num_leaves': 15}
+2026/11/08 00:02:00 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+INFO xgboost validation MAE 11.280; params={'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 180}
+INFO bengaluru: calendar_rows=2192 dropped_missing_target=100 dropped_missing_pm25_t=9
+INFO chennai: calendar_rows=2192 dropped_missing_target=92 dropped_missing_pm25_t=7
+INFO delhi: calendar_rows=2192 dropped_missing_target=17 dropped_missing_pm25_t=2
+INFO gwalior: calendar_rows=1827 dropped_missing_target=36 dropped_missing_pm25_t=3
+INFO hyderabad: calendar_rows=2192 dropped_missing_target=45 dropped_missing_pm25_t=3
+INFO jaipur: calendar_rows=2192 dropped_missing_target=73 dropped_missing_pm25_t=1
+INFO kolkata: calendar_rows=2192 dropped_missing_target=51 dropped_missing_pm25_t=6
+INFO lucknow: calendar_rows=2192 dropped_missing_target=59 dropped_missing_pm25_t=1
+INFO mumbai: calendar_rows=2192 dropped_missing_target=80 dropped_missing_pm25_t=4
+INFO visakhapatnam: calendar_rows=1827 dropped_missing_target=22 dropped_missing_pm25_t=1
+2026/11/08 00:02:06 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+Selected lightgbm by validation MAE 11.167
+Split rows: train=14,184, val=1,816, test_a=1,828, test_b=2,750
+Exported 6 backend assets

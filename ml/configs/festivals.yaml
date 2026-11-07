@@ -1,0 +1,16 @@
+# New Delhi Diwali dates. Source: https://www.drikpanchang.com/festivals/month/festivals-november.html?year=2020
+# 2021: https://www.drikpanchang.com/festivals/lunar-month/festivals-kartika.html?lunar-year=2078
+# 2022: https://www.drikpanchang.com/panchang/day-panchang.html?date=24%2F10%2F2022
+# 2023: https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?geoname-id=1261481&year=2023
+# 2024: https://www.drikpanchang.com/diwali/muhurat/diwali-puja-muhurat.html?geoname-id=1261481&year=2024
+# 2025: https://www.drikpanchang.com/festivals/month/festivals-october.html?lang=en&year=2025
+{
+  "diwali": {
+    "2020": "2020-11-14",
+    "2021": "2021-11-04",
+    "2022": "2022-10-24",
+    "2023": "2023-11-12",
+    "2024": "2024-11-01",
+    "2025": "2025-10-20"
+  }
+}

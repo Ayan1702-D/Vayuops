@@ -1,0 +1,35 @@
+{
+  "selected_config": {
+    "model": "persistence",
+    "params": {}
+  },
+  "persistence": [],
+  "summary_configs": [],
+  "split_dates": {},
+  "features": [
+    "pm25_t",
+    "pm25_t_minus_1",
+    "pm25_t_minus_2",
+    "pm25_t_minus_6",
+    "pm25_mean_7",
+    "pm25_std_7",
+    "pm25_mean_14",
+    "pm25_std_14",
+    "pm10_t",
+    "pm10_mean_3",
+    "no2_t",
+    "no2_mean_3",
+    "so2_t",
+    "so2_mean_3",
+    "co_t",
+    "co_mean_3",
+    "o3_t",
+    "o3_mean_3",
+    "day_of_week",
+    "month_sin",
+    "month_cos",
+    "day_of_year_sin",
+    "day_of_year_cos",
+    "city"
+  ]
+}
