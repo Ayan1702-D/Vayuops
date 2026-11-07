@@ -1,0 +1,151 @@
+INFO cities_2020_2024 median pm25=27.53
+INFO cities_2020_2024 median pm10=81.26
+INFO cities_2020_2024 median no2=20.845
+INFO cities_2020_2024 median so2=5.57
+INFO cities_2020_2024 median co=0.65
+INFO cities_2020_2024 median o3=28.88
+INFO cities_2020_2024 median nh3=10.9
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=31.31
+INFO cities_2020_2024 median pm10=58.68
+INFO cities_2020_2024 median no2=13.54
+INFO cities_2020_2024 median so2=6.46
+INFO cities_2020_2024 median co=0.88
+INFO cities_2020_2024 median o3=14.205
+INFO cities_2020_2024 median nh3=15.645
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=81.44
+INFO cities_2020_2024 median pm10=188.22
+INFO cities_2020_2024 median no2=44.485
+INFO cities_2020_2024 median so2=15.274999999999999
+INFO cities_2020_2024 median co=0.985
+INFO cities_2020_2024 median o3=21.56
+INFO cities_2020_2024 median nh3=22.805
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=43.14
+INFO cities_2020_2024 median pm10=112.65
+INFO cities_2020_2024 median no2=21.415
+INFO cities_2020_2024 median so2=20.240000000000002
+INFO cities_2020_2024 median co=0.78
+INFO cities_2020_2024 median o3=42.66
+INFO cities_2020_2024 median nh3=17.53
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=25.89
+INFO cities_2020_2024 median pm10=72.3
+INFO cities_2020_2024 median no2=32.79
+INFO cities_2020_2024 median so2=4.385
+INFO cities_2020_2024 median co=0.43
+INFO cities_2020_2024 median o3=17.24
+INFO cities_2020_2024 median nh3=11.93
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=55.5
+INFO cities_2020_2024 median pm10=128.475
+INFO cities_2020_2024 median no2=40.58
+INFO cities_2020_2024 median so2=12.57
+INFO cities_2020_2024 median co=0.9
+INFO cities_2020_2024 median o3=37.47
+INFO cities_2020_2024 median nh3=42.29
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=42.18
+INFO cities_2020_2024 median pm10=92.98
+INFO cities_2020_2024 median no2=17.48
+INFO cities_2020_2024 median so2=11.44
+INFO cities_2020_2024 median co=0.56
+INFO cities_2020_2024 median o3=37.11
+INFO cities_2020_2024 median nh3=17.12
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=71.8
+INFO cities_2020_2024 median pm10=162.10000000000002
+INFO cities_2020_2024 median no2=29.335
+INFO cities_2020_2024 median so2=6.97
+INFO cities_2020_2024 median co=1.31
+INFO cities_2020_2024 median o3=31.53
+INFO cities_2020_2024 median nh3=55.85
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 1}
+INFO cities_2020_2024 median pm25=26.84
+INFO cities_2020_2024 median pm10=107.86
+INFO cities_2020_2024 median no2=21.0
+INFO cities_2020_2024 median so2=10.36
+INFO cities_2020_2024 median co=1.05
+INFO cities_2020_2024 median o3=15.434999999999999
+INFO cities_2020_2024 median nh3=11.32
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO cities_2020_2024 median pm25=37.875
+INFO cities_2020_2024 median pm10=103.08
+INFO cities_2020_2024 median no2=33.92
+INFO cities_2020_2024 median so2=10.5
+INFO cities_2020_2024 median co=0.59
+INFO cities_2020_2024 median o3=17.66
+INFO cities_2020_2024 median nh3=14.08
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO openaq_2025 file date disagrees with IST date: 291005 rows
+INFO openaq_2025 median pm25=33.75
+INFO openaq_2025 median pm10=79.19999999999999
+INFO openaq_2025 median no2=35.344
+INFO openaq_2025 median so2=20.4622
+INFO openaq_2025 median co=0.000746619
+WARNING openaq_2025 median co=0.001 outside [0.1, 5.0]
+INFO openaq_2025 median o3=24.5
+INFO openaq_2025 median nh3=nan
+INFO openaq_2025: rows_in=291005 rows_out=3701 dates=2025-01-01 00:00:00..2025-12-31 00:00:00 cities=11 dropped={'wrong unit': 0, 'station filter': 0, 'sentinel': 0, 'unknown parameter': 0, 'other invalid': 0}
+INFO city_day detected date format %Y-%m-%d
+INFO city_day median pm25=53.09
+INFO city_day median pm10=102.77
+INFO city_day median no2=22.34
+INFO city_day median so2=9.12
+INFO city_day median co=0.93
+INFO city_day median o3=30.88
+INFO city_day median nh3=18.185000000000002
+INFO city_day: rows_in=25555 rows_out=25555 dates=2015-01-01 00:00:00..2020-04-10 00:00:00 cities=22 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO air_pollution_data detected date format %d-%m-%Y
+INFO air_pollution_data median pm25=58.86
+INFO air_pollution_data median pm10=75.775
+INFO air_pollution_data median no2=16.45
+INFO air_pollution_data median so2=7.99
+INFO air_pollution_data median co=0.7009500000000001
+INFO air_pollution_data median o3=28.25
+INFO air_pollution_data median nh3=6.52
+INFO air_pollution_data: rows_in=23504 rows_out=23504 dates=2020-11-30 00:00:00..2023-05-25 00:00:00 cities=26 dropped={'invalid city/date': 0, 'sentinel': 0}
+INFO City-dates with more than one source: 8944
+WARNING Median disagreement >2x: cities_2020_2024 vs air_pollution_data, nh3, ratio 2.15
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\patha\Desktop\Projects\vayuops-end-to-end-ml-system\ml\src\vayuops_ml\ingest.py", line 185, in <module>
+    ingest(Path(__file__).resolve().parents[3])
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patha\Desktop\Projects\vayuops-end-to-end-ml-system\ml\src\vayuops_ml\ingest.py", line 171, in ingest
+    overlap.to_csv(reports / "source_overlap.csv", index=False)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\patha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\patha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\patha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\patha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\patha\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\patha\\Desktop\\Projects\\vayuops-end-to-end-ml-system\\reports\\source_overlap.csv'

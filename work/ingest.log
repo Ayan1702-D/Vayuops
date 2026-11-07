@@ -1,0 +1,19 @@
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO cities_2020_2024: rows_in=1827 rows_out=1827 dates=2020-01-01 00:00:00..2024-12-31 00:00:00 cities=1 dropped={'invalid city/date': 0}
+INFO openaq_2025: rows_in=291005 rows_out=3701 dates=2025-01-01 00:00:00..2025-12-31 00:00:00 cities=11 dropped={'wrong unit': 0, 'unknown parameter': 0, 'other invalid': 0}
+INFO city_day: rows_in=25555 rows_out=25555 dates=2015-01-01 00:00:00..2020-04-10 00:00:00 cities=22 dropped={'invalid city/date': 0}
+INFO air_pollution_data: rows_in=23504 rows_out=23504 dates=2020-11-30 00:00:00..2023-05-25 00:00:00 cities=26 dropped={'invalid city/date': 0}
+INFO City-dates with more than one source: 8944
+WARNING PM2.5 > 1000: 6 rows
+WARNING ahmedabad PM2.5 coverage below 70%: 62.7%
+WARNING jorapokhar PM2.5 coverage below 70%: 55.2%
+WARNING mumbai PM2.5 coverage below 70%: 67.5%
+WARNING Median disagreement >2x: cities_2020_2024 vs air_pollution_data, nh3, ratio 2.15

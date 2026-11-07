@@ -1,0 +1,1 @@
+// Monitoring page placeholder.

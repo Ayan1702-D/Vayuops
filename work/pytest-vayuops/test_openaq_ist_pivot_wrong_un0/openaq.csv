@@ -1,0 +1,6 @@
+city,date_from,date,unit,station,parameter,value
+Bangalore,2025-01-01T20:00:00+00:00,,ug/m3,A,pm25,10
+Bangalore,2025-01-01T20:00:00+00:00,,ug/m3,A,pm25,30
+Bangalore,2025-01-01T20:00:00+00:00,,ug/m3,B,pm25,50
+Bangalore,2025-01-01T20:00:00+00:00,,unsupported,B,no2,8
+Bangalore,2025-01-01T20:00:00+00:00,,ppb,A,no2,10

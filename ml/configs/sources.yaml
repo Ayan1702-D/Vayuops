@@ -1,0 +1,151 @@
+# OpenAQ ppb conversion factors assume 25 C and 1 atm.
+{
+  "aliases": {
+    "bangalore": "bengaluru"
+  },
+  "priority": [
+    "cities_2020_2024",
+    "openaq_2025",
+    "city_day",
+    "air_pollution_data"
+  ],
+  "timezone": "Asia/Kolkata",
+  "pollutants": [
+    "pm25",
+    "pm10",
+    "no2",
+    "so2",
+    "co",
+    "o3",
+    "nh3"
+  ],
+  "sources": {
+    "cities_2020_2024": {
+      "glob": "indian_cities_aqi_2020_2024/*_combined.csv",
+      "date_column": "Timestamp",
+      "date_format": "%d-%m-%Y",
+      "location_column": "Location",
+      "column_map": {
+        "PM2.5": "pm25",
+        "PM10": "pm10",
+        "NO2": "no2",
+        "SO2": "so2",
+        "CO": "co",
+        "O3": "o3",
+        "NH3": "nh3"
+      },
+      "scale": {
+        "PM2.5": 1.0,
+        "PM10": 1.0,
+        "NO2": 1.0,
+        "SO2": 1.0,
+        "CO": 1.0,
+        "O3": 1.0,
+        "NH3": 1.0
+      },
+      "modeling_enabled": true
+    },
+    "openaq_2025": {
+      "glob": "india_air_quality_2025_openaq/india_air_quality_2025.csv",
+      "date_column": "date_from",
+      "city_column": "city",
+      "station_column": "station",
+      "parameter_column": "parameter",
+      "value_column": "value",
+      "unit_column": "unit",
+      "column_map": {
+        "pm25": "pm25",
+        "pm10": "pm10",
+        "no2": "no2",
+        "so2": "so2",
+        "co": "co",
+        "o3": "o3"
+      },
+      "expected_unit": "ug/m3",
+      "unit_factors": {
+        "pm25": {
+          "\u00b5g/m\u00b3": 1.0
+        },
+        "pm10": {
+          "\u00b5g/m\u00b3": 1.0
+        },
+        "o3": {
+          "\u00b5g/m\u00b3": 1.0
+        },
+        "co": {
+          "ppb": 0.001146
+        },
+        "no2": {
+          "ppb": 1.88
+        },
+        "so2": {
+          "ppb": 2.62
+        }
+      },
+      "openaq_station_filter": {},
+      "modeling_enabled": true
+    },
+    "city_day": {
+      "glob": "city_day.csv/city_day.csv",
+      "date_column": "Date",
+      "date_format": "%Y-%m-%d",
+      "city_column": "City",
+      "column_map": {
+        "PM2.5": "pm25",
+        "PM10": "pm10",
+        "NO2": "no2",
+        "SO2": "so2",
+        "CO": "co",
+        "O3": "o3",
+        "NH3": "nh3"
+      },
+      "scale": {
+        "PM2.5": 1.0,
+        "PM10": 1.0,
+        "NO2": 1.0,
+        "SO2": 1.0,
+        "CO": 1.0,
+        "O3": 1.0,
+        "NH3": 1.0
+      },
+      "modeling_enabled": false
+    },
+    "air_pollution_data": {
+      "glob": "air_pollution_data.csv/air_pollution_data.csv",
+      "date_column": "date",
+      "date_format": "%d-%m-%Y",
+      "city_column": "city",
+      "column_map": {
+        "pm2_5": "pm25",
+        "pm10": "pm10",
+        "no2": "no2",
+        "so2": "so2",
+        "co": "co",
+        "o3": "o3",
+        "nh3": "nh3"
+      },
+      "scale": {
+        "pm2_5": 1.0,
+        "pm10": 1.0,
+        "no2": 1.0,
+        "so2": 1.0,
+        "co": 0.001,
+        "o3": 1.0,
+        "nh3": 1.0
+      },
+      "modeling_enabled": false
+    }
+  },
+  "modeling_cities": [
+    "bengaluru",
+    "chennai",
+    "delhi",
+    "gwalior",
+    "hyderabad",
+    "jaipur",
+    "kolkata",
+    "lucknow",
+    "mumbai",
+    "visakhapatnam"
+  ]
+}

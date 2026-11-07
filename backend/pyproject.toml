@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vayuops-backend"
+version = "0.1.0"
+description = "VayuOps API scaffold"
+requires-python = "==3.11.*"
+dependencies = [
+  "fastapi==0.121.3",
+  "uvicorn==0.38.0",
+  "pydantic-settings==2.11.0",
+  "httpx==0.28.1",
+  "pandas==2.3.3",
+  "pyarrow==22.0.0",
+  "scikit-learn==1.7.2",
+  "lightgbm==4.7.0",
+  "xgboost==3.1.1",
+  "mlflow==3.6.0",
+  "pandera==0.26.1",
+  "evidently==0.7.17",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.1", "ruff==0.14.5"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
