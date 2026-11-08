@@ -1,0 +1,51 @@
+name: Pipeline smoke test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: ml/pyproject.toml
+      - name: Install ML
+        run: python -m pip install -e ./ml
+      - name: Generate synthetic clean data and smoke config
+        run: python ml/tests/fixtures/generate_smoke_data.py "$RUNNER_TEMP/vayuops-smoke"
+      - name: Build features, train, and check drift
+        run: |
+          python - "$RUNNER_TEMP/vayuops-smoke" <<'PY'
+          import sys
+          from pathlib import Path
+
+          from vayuops_ml import drift, features, train
+
+          root = Path(sys.argv[1])
+          features.main(root)
+          train.train(root)
+          drift.run(root)
+          PY
+      - name: Check generated artifacts
+        run: |
+          cd "$RUNNER_TEMP/vayuops-smoke"
+          for file in \
+            data/processed/{clean,features}.parquet \
+            reports/{results.md,results.json,grid_results.csv,monthly_mae.csv,backtest.parquet,ablation.md} \
+            reports/drift/{test_a.html,test_b.html,drift_summary.json} \
+            backend/app/assets/{model.joblib,metadata.json,serving_features.parquet,history.parquet,backtest.parquet,results.json,drift_summary.json}; do
+            if [[ ! -s "$file" ]]; then
+              echo "::error::Missing or empty artifact: $file"
+              exit 1
+            fi
+          done

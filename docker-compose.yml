@@ -1,1 +1,9 @@
-# Docker Compose placeholder.
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      PORT: "${PORT:-7860}"
+      CORS_ORIGINS: "${CORS_ORIGINS:-}"
+    ports:
+      - "${PORT:-7860}:${PORT:-7860}"

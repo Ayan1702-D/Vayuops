@@ -1,1 +1,2 @@
-// Monitoring page placeholder.
+import { MonitoringPage } from "@/components/Dashboard";
+export default MonitoringPage;

@@ -19,5 +19,4 @@ serve:
 	@echo "API serving placeholder"
 
 up:
-	@echo "Local stack placeholder"
-
+	docker compose up --build

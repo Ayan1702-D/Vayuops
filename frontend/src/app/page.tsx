@@ -1,1 +1,2 @@
-// Overview page placeholder.
+import { Overview } from "@/components/Dashboard";
+export default Overview;

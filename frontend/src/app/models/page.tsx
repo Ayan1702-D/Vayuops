@@ -1,1 +1,2 @@
-// Models page placeholder.
+import { ModelsPage } from "@/components/Dashboard";
+export default ModelsPage;

@@ -2,20 +2,55 @@
 
 from __future__ import annotations
 
+import json
 from datetime import date, timedelta
 from pathlib import Path
 
+import joblib
+import pandas as pd
+import pytest
 from fastapi.testclient import TestClient
+from sklearn.dummy import DummyRegressor
 
 from app.config import Settings
 from app.main import create_app
 
 
-ASSETS = Path(__file__).resolve().parents[1] / "app" / "assets"
+@pytest.fixture
+def assets(tmp_path: Path) -> Path:
+    """Write a complete serving snapshot from invented measurements."""
+    day = pd.Timestamp("2025-01-01")
+    serving = pd.DataFrame({"city": ["bengaluru"], "date": [day], "pm25_t": [20.0]})
+    serving.to_parquet(tmp_path / "serving_features.parquet", index=False)
+    model = DummyRegressor().fit(serving[["pm25_t"]], [23.0])
+    joblib.dump(model, tmp_path / "model.joblib")
+
+    serving.rename(columns={"pm25_t": "pm25"}).to_parquet(tmp_path / "history.parquet", index=False)
+    serving[["city", "date"]].assign(
+        split="test_a", station_matched=False, y_true=23.0, y_pred_best=23.0,
+        y_pred_persistence=20.0,
+    ).to_parquet(tmp_path / "backtest.parquet", index=False)
+
+    selected = {"model": "dummy", "config_id": "synthetic", "target_mode": "level"}
+    documents = {
+        "metadata.json": {"selected_config": selected, "features": ["pm25_t"]},
+        "results.json": {
+            "best_model": "dummy", "summary_configs": [selected], "model_metrics": [],
+            "split_dates": {},
+        },
+        "drift_summary.json": {
+            "method": "synthetic", "reference_period": {}, "comparisons": {
+                "test_a": {"status": "no_drift"}, "test_b": {"status": "no_drift"},
+            },
+        },
+    }
+    for name, content in documents.items():
+        (tmp_path / name).write_text(json.dumps(content), encoding="utf-8")
+    return tmp_path
 
 
-def test_every_endpoint() -> None:
-    with TestClient(create_app(Settings(assets_dir=ASSETS))) as client:
+def test_every_endpoint(assets: Path) -> None:
+    with TestClient(create_app(Settings(assets_dir=assets))) as client:
         health = client.get("/health")
         assert health.status_code == 200
         assert health.json()["status"] == "ok"
@@ -34,7 +69,7 @@ def test_every_endpoint() -> None:
         assert forecast.status_code == 200
         prediction = forecast.json()
         assert prediction["city"] == city
-        assert prediction["pm25_forecast"] >= 0
+        assert prediction["pm25_forecast"] == 23.0
         assert prediction["label"] == "static data snapshot"
         assert date.fromisoformat(prediction["target_date"]) == (
             date.fromisoformat(prediction["as_of_date"]) + timedelta(days=1)
@@ -63,8 +98,8 @@ def test_every_endpoint() -> None:
         assert set(drift.json()["comparisons"]) == {"test_a", "test_b"}
 
 
-def test_unknown_city_and_validation_error() -> None:
-    with TestClient(create_app(Settings(assets_dir=ASSETS))) as client:
+def test_unknown_city_and_validation_error(assets: Path) -> None:
+    with TestClient(create_app(Settings(assets_dir=assets))) as client:
         unknown = client.get("/forecast", params={"city": "unknown"})
         assert unknown.status_code == 404
         assert unknown.json()["error"]["code"] == "unknown_city"
@@ -82,8 +117,8 @@ def test_missing_asset_returns_503(tmp_path: Path) -> None:
         assert "model.joblib" in response.json()["error"]["message"]
 
 
-def test_cors_origins_from_environment(monkeypatch) -> None:
+def test_cors_origins_from_environment(monkeypatch: pytest.MonkeyPatch, assets: Path) -> None:
     monkeypatch.setenv("CORS_ORIGINS", "https://example.org,https://example.com")
-    with TestClient(create_app(Settings(assets_dir=ASSETS))) as client:
+    with TestClient(create_app(Settings(assets_dir=assets))) as client:
         response = client.get("/cities", headers={"Origin": "https://example.org"})
         assert response.headers["access-control-allow-origin"] == "https://example.org"
